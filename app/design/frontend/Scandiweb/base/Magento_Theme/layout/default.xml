@@ -8,5 +8,11 @@
                 <argument name="logo_alt" xsi:type="string">Logo name</argument>
             </arguments>
         </referenceBlock>
+        <referenceContainer name="header.container">
+            <container name="header.banner" as="header_banner" label="Page Header Container"  htmlTag="header" htmlClass="header-mini-container" before="header.panel.wrapper"/>
+        </referenceContainer>
+        <referenceContainer name="header.banner">
+            <block class="Magento\Framework\View\Element\Template" name="header.mini.container" template="Magento_Theme::shipping_banner.phtml"/>
+        </referenceContainer>
     </body>
 </page>
