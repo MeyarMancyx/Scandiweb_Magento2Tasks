@@ -1,0 +1,18 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                <argument name="logo_width" xsi:type="number">300</argument>
+                <argument name="logo_height" xsi:type="number">300</argument>
+                <argument name="logo_alt" xsi:type="string">Logo name</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceContainer name="header.container">
+            <container name="header.banner" as="header_banner" label="Page Header Container"  htmlTag="header" htmlClass="header-mini-container" before="header.panel.wrapper"/>
+        </referenceContainer>
+        <referenceContainer name="header.banner">
+            <block class="Magento\Framework\View\Element\Template" name="header.mini.container" template="Magento_Theme::shipping_banner.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
