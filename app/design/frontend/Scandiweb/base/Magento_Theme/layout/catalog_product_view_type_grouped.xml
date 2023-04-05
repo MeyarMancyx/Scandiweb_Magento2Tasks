@@ -19,5 +19,6 @@
             <block class="Magento\GroupedProduct\Block\Product\View\Type\Grouped" name="product.info.grouped.stock" as="product.info.grouped" template="Magento_GroupedProduct::product/view/type/default.phtml"/>
         </referenceContainer>
         <referenceContainer name="catalog.product.related" display="false"/>
+        <attribute name="class" value="page-product-combined"/>
     </body>
 </page>
