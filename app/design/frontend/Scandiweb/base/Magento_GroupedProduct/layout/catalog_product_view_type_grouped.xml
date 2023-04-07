@@ -7,6 +7,7 @@
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
+        <!-- Task 5 -->
         <attribute name="class" value="page-product-grouped"/>
         <referenceContainer name="product.info.form.content">
             <block class="Magento\GroupedProduct\Block\Product\View\Type\Grouped" name="product.info.grouped" before="product.info.addtocart" template="Magento_GroupedProduct::product/view/type/grouped.phtml"/>
@@ -19,6 +20,8 @@
             <block class="Magento\GroupedProduct\Block\Product\View\Type\Grouped" name="product.info.grouped.stock" as="product.info.grouped" template="Magento_GroupedProduct::product/view/type/default.phtml"/>
         </referenceContainer>
         <referenceContainer name="catalog.product.related" display="false"/>
+
+        <!-- Task 6 -->
         <attribute name="class" value="page-product-combined"/>
     </body>
 </page>
