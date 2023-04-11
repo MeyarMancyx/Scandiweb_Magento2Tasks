@@ -1,4 +1,5 @@
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <!-- Task 1 -->
         <referenceBlock name="logo">
@@ -12,15 +13,17 @@
 
         <!-- Task 2 -->
         <referenceContainer name="header.container">
-            <container name="header.banner" as="header_banner" label="Page Header Container"  htmlTag="header" htmlClass="header-mini-container" before="header.panel.wrapper"/>
+            <container name="header.banner" as="header_banner" label="Page Header Container" htmlTag="header"
+                       htmlClass="header-mini-container" before="header.panel.wrapper"/>
         </referenceContainer>
         <referenceContainer name="header.banner">
             <!-- Task 7: added ifconfig -->
-            <block class="Magento\Framework\View\Element\Template" name="header.mini.container" ifconfig="carriers/freeshipping/active" template="Magento_Theme::shipping_banner.phtml"/>
+            <block class="Magento\Framework\View\Element\Template" name="header.mini.container"
+                   ifconfig="carriers/freeshipping/active" template="Magento_Theme::shipping_banner.phtml"/>
         </referenceContainer>
 
         <!-- Task 3 -->
-        <move element="form.subscribe" destination="page.bottom" after="-" />
+        <move element="form.subscribe" destination="page.bottom" after="-"/>
 
         <!-- Task 4 -->
         <block name="form.subscribe" template="Magento_Theme::subscription_placeholder.phtml"/>
