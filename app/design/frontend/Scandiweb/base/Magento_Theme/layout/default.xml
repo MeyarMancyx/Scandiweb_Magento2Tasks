@@ -10,7 +10,6 @@
                 <argument name="logo_alt" xsi:type="string">Logo name</argument>
             </arguments>
         </referenceBlock>
-
         <!-- Task 2 -->
         <referenceContainer name="header.container">
             <container name="header.banner" as="header_banner" label="Page Header Container" htmlTag="header"
@@ -21,10 +20,8 @@
             <block class="Magento\Framework\View\Element\Template" name="header.mini.container"
                    ifconfig="carriers/freeshipping/active" template="Magento_Theme::shipping_banner.phtml"/>
         </referenceContainer>
-
         <!-- Task 3 -->
         <move element="form.subscribe" destination="page.bottom" after="-"/>
-
         <!-- Task 4 -->
         <block name="form.subscribe" template="Magento_Theme::subscription_placeholder.phtml"/>
     </body>

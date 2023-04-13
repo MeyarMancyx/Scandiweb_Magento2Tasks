@@ -1,9 +1,16 @@
 <?php
 /**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
+ *
+ * @category Scandiweb
+ * @package Scandiweb_Test
+ * @author Meyar Mancy <info@scandiweb.com>
+ * @copyright Copyright (c) 2023 Scandiweb, Inc (https://scandiweb.com)
+ * @license http://opensource.org/licenses/OSL-3.0 The Open Software License 3.0 (OSL-3.0)
  */
 
-use \Magento\Framework\Component\ComponentRegistrar;
+use Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::THEME, 'frontend/Scandiweb/base', __DIR__);
+ComponentRegistrar::register(
+    ComponentRegistrar::THEME,
+    'frontend/Scandiweb/base',
+    __DIR__);
