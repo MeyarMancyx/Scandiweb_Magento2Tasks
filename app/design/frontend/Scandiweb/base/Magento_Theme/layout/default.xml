@@ -22,7 +22,5 @@
         </referenceContainer>
         <!-- Task 3 -->
         <move element="form.subscribe" destination="page.bottom" after="-"/>
-        <!-- Task 4 -->
-        <block name="form.subscribe" template="Magento_Theme::subscription_placeholder.phtml"/>
     </body>
 </page>
